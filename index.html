@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" rel = "stylesheet">
+        <link rel = "icon" href = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.tnif5M7gBkkdKyLYlahcDgD6D6%26pid%3DApi&f=1" type = "image/x-icon">
+        <title>LiveWell - Reliable health info</title>
+    </head>
+    <body>
+        <nav>
+            <label id = "title">Live<span id = "label2">Well</span>
+            <!--<input placeholder = "Search here" id = "search" />-->
+        </nav>
+        <div id = "home">
+        <br>
+        <br>
+        <br>
+        <div id = "story" onclick = "document.getElementById ('home').style.display = 'none';document.getElementById ('s1').style.display = 'block';document.title = 'LiveWell - Reliable health info';location.hash = 'goodposture'">
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bNCWW0iXP9kZj9zZF3D8sgHaEK%26pid%3DApi&f=1" alt = "Cartoon person sitting up straight in chair" />
+            <br>
+            <br>
+            <h2>Good posture</h2>
+            <p id = "des">Is sitting up straight the best way to sit?</p>
+            <br>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id = "s1">
+            <h2 style = "width:100%;">Good posture</h2>
+            <p id = "des" style = "width:100%;">Is sitting up straight the best way to sit?<br>June 19, 2021</p>
+            <br>
+            <a href = "mailto:?subject=Good posture&body=Is sitting up straight the best way to sit? maxsspot.github.io/livewell/#goodposture" target = "_blank" id = "share"><i class = "fas fa-envelope fa-lg"></i></a>
+            <a href = "sms://+?body=Good posture | Is sitting up straight the best way to sit? maxsspor.github.io/livewell/#goodposture" target = "_blank" id = "share"><i class = "fas fa-sms fa-lg"></i></a>
+            <a href = "https://www.facebook.com/sharer/sharer.php?u=maxsspot.github.io/livewell/#goodposture;src=sdkpreparse" target = "_blank" id = "share"><i class = "fab fa-facebook fa-lg"></i></a>
+            <br>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bNCWW0iXP9kZj9zZF3D8sgHaEK%26pid%3DApi&f=1" alt = "Man sitting in chair" style = "width:300px;" />
+            <br>
+            <br>
+        <p>You have probably been told many times that sitting up straight is good and you should do it... but is that actually true?</p>
+        <br>
+        <p>Well a <a href = "https://www.sciencedaily.com/releases/2006/11/061127112844.htm" target = "_blank">study</a> in 2006 says that sitting up straight is a bad position for your back to be in. The study said that sitting at 135° is the best for your back.</p>
+        <br>
+        <p>Another <a href = "https://www.motleyhealth.com/health-news/slouching-back-is-good-for-your-back-do" target = "_blank">website</a> states that sitting up straight will cause back problems later in life.</p>
+        <br>
+        <p>In conclusion, sitting at a 135° is probably better for your back and that is how you should sit.</p>
+        <br>
+        <button id = "return" onclick = "alert('https://www.sciencedaily.com/releases/2006/11/061127112844.htm\n\nhttps://www.motleyhealth.com/health-news/slouching-back-is-good-for-your-back-do')">Sources</button>
+        <button id = "return" onclick = "document.getElementById ('home').style.display = 'block';document.getElementById ('s1').style.display = 'none';location.hash = '';document.title = 'LiveWell - Reliable health info'">Return to home</button>
+        <br>
+        <br>
+        </div>
+        <style>
+            * {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family:"Montserrat", sans-serif;
+    text-align:center;
+}
+
+p {
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+a {
+    color:blue;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+#share {
+    margin-top:5px;
+}
+
+#label2 {
+    color:orange;
+}
+
+nav {
+    background-color:#36454f;
+    width:100%;
+    height:50px;
+    position:fixed;
+}
+
+#story {
+    width:335px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#story:hover {
+    background-color:whitesmoke;
+}
+
+#story:active {
+    transform:scale(0.95);
+}
+
+#s1 {
+    display:none;
+}
+
+#title {
+    color:white;
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    left:5px;
+    position:fixed;
+    background-color:transparent;
+    border:transparent;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+img {
+    width:300px;
+    height:200px;
+    border-radius:5px;
+}
+
+h2 {
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#des {
+    color:gray;
+    margin-left:auto;
+    margin-right:auto;
+    width:200px;
+}
+
+#return {
+    width:150px;
+    height:30px;
+    background-color:transparent;
+    border:transparent;
+    border-radius:50px;
+    color:skyblue;
+}
+
+#return:hover {
+    background-color:gainsboro;
+}
+
+#return:active {
+    background-color:lightgray;
+}
+
+/* #search {
+    width:150px;
+    height:30px;
+    background-color:lightgray;
+    border:transparent;
+    border-radius:50px;
+    text-indent:10px;
+    float:right;
+    top:10px;
+    position:fixed;
+    right:10px;
+} */
+
+button, input, #story {
+    font-family:"Montserrat", sans-serif;
+    outline:none;
+    transition:all 0.25s;
+}
+        </style>
+        <script>
+            if (window.location.href = "maxsspot.github.io/livewell/#goodposture") {
+                document.getElementById ("home").style.display = "none";
+                document.getElementById ("s1").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
