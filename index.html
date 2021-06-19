@@ -15,7 +15,7 @@
         <br>
         <br>
         <br>
-        <div id = "story" onclick = "document.getElementById ('home').style.display = 'none';document.getElementById ('s1').style.display = 'block';document.title = 'LiveWell - Reliable health info';location.hash = 'goodposture'">
+        <div id = "story" onclick = "document.getElementById ('home').style.display = 'none';document.getElementById ('s1').style.display = 'block';document.title = 'LiveWell - Reliable health info';ha()">
             <br>
             <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bNCWW0iXP9kZj9zZF3D8sgHaEK%26pid%3DApi&f=1" alt = "Cartoon person sitting up straight in chair" />
             <br>
@@ -190,6 +190,10 @@ button, input, #story {
             if (window.location.href = "maxsspot.github.io/livewell/#goodposture") {
                 document.getElementById ("home").style.display = "none";
                 document.getElementById ("s1").style.display = "block";
+            }
+
+            function ha () {
+                location.hash = "goodposture";
             }
         </script>
     </body>
